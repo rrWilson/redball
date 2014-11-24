@@ -1,0 +1,151 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup()
+
+{
+redball.top=redball.top-5;
+}
+</script>
+<script>
+function movedown()
+
+{
+redball.top=redball.top+5;
+}
+</script>
+<script>
+function moveleft()
+
+{
+redball.left=redball.left-5;
+}
+</script>
+<script>
+function moveright()
+
+{
+redball.left=redball.left+5;
+}
+</script>
+<script>
+function movesquare()
+
+{
+
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+redball.top=redball.top+50;
+
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+redball.left=redball.left+50;
+
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+redball.top=redball.top-50;
+
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+redball.left=redball.left-50;
+}
+</script>
+<script>
+function movedownright()
+{
+redball.top=redball.top+5;
+redball.left=redball.left+5;
+}
+</script>
+<script>
+function moveupleft()
+{
+redball.top=redball.top-5;
+redball.left=redball.left-5;
+}
+</script>
+<script>
+function moveupright()
+{
+redball.top=redball.top-5;
+redball.left=redball.left+5;
+}
+</script>
+<script>
+function movedownleft()
+{
+redball.top=redball.top+5;
+redball.left=redball.left-5;
+}
+</script>
+<script>
+function movetriangle()
+{
+redball.top=redball.top+10;
+redball.left=redball.left+10;
+redball.top=redball.top+10;
+redball.left=redball.left+10;
+redball.top=redball.top+10;
+redball.left=redball.left+10;
+
+redball.top=redball.top-10;
+redball.left=redball.left+10;
+redball.top=redball.top-10;
+redball.left=redball.left+10;
+redball.top=redball.top-10;
+redball.left=redball.left+10;
+
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+}
+</script>
+
+
+</script>
+
+</head>
+<body>
+<button ="botton">Rilwan's button</button>
+
+
+
+
+
+
+
+
+
+<button onclick= "movetriangle()"> <img src= "center.jpg" hieght=60 width=60></button>
+<img src= "Move1.jpg"alt="redball" id="redball" height=160 width=60/> 
+<table>
+       <tbody>
+	           <tr>
+					<td><button onclick="moveupleft()"><img src="redball1-005.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveup()"><img src="redball1-001.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveupright()"><img src="redball1-006.jpg" hieght=60 width=60</button></td>
+
+				</tr>
+				<tr>
+					<td><button onclick="moveleft()"><img src="redball1-004.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="movesquare()"><img src="redball1-009.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveright()"><img src="redball1-002.jpg" hieght=60 width=60</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="movedownleft()"><img src="redball1-008.jpg" hieght=60 width=60</button>
+					<td><button onclick="movedown()"><img src="redball1-003.jpg" hieght=60 width=60></button>
+					<td><button onclick="movedownright()"><img src="redball1-007.jpg" hieght=60 width=60</button>
+				</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
