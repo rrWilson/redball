@@ -1,0 +1,195 @@
+
+<html>
+<head>
+<style>
+	#myDiv {
+	position: absolute;
+	left: 200px;
+	top: 300px;
+}
+		#redball {
+	position: absolute;
+	left: 623px;
+	top: 288px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+function fadeIn(){
+$("#myDiv").fadeIn()
+}
+
+function fadeOut(){
+$("#myDiv").fadeOut()
+}
+
+function fontSize(){
+$("#myDiv").css("fontSize", "25px")
+}
+
+
+function moveUp(){
+var p = $("#redball");
+var pos = p.offset();
+pos.top = pos.top -5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+
+function moveDown(){
+var p = $("#redball");
+var pos = p.offset();
+pos.top = pos.top +5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+function moveLeft(){
+var p = $("#redball");
+var pos = p.offset();
+pos.left = pos.left -5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+function moveRight(){
+var p = $("#redball");
+var pos = p.offset();
+pos.left = pos.left +5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+function moveUpRight(){
+var p = $("#redball");
+var pos = p.offset();
+pos.left = pos.left +5;
+pos.top = pos.top -5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+function moveUpLeft(){
+var p = $("#redball");
+var pos = p.offset();
+pos.left = pos.left -5;
+pos.top = pos.top +5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+function moveDownRight(){
+var p = $("#redball");
+var pos = p.offset();
+pos.left = pos.left +5;
+pos.top = pos.top +5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+function moveDownLeft(){
+var p = $("#redball");
+var pos = p.offset();
+pos.left = pos.left -5;
+pos.top = pos.top +5;
+p.css( {top: pos.top +"px", left:pos.left +"px"});
+}
+
+function moveUp10(){
+var p = $("#redball");
+var pos = p.offset();
+      for (var p =1; p<=10; p ++) {
+	         moveUp()		 }
+	}
+
+
+	
+$("#rectangle").click(function () {
+	$("#redball").animate({ "left": "+=500px" }, "slow");
+	$("#redball").animate({ "top": "+=200px" },"slow");
+	$("#redball").animate({ "left": "-=500px" }, "slow");
+	$("#redball").animate({ "top": "-=200px" }, "slow");
+	});
+	
+
+	/*var p = $("#redball");
+var pos = p.offset();
+       for (var p = 1; p<=30; p ++) {
+	          moveRight();
+			  } 
+        for (var p = 1; p<=10; p ++) {
+               moveDown();
+               }
+var pos = p.offset();
+        for (var p = 1; p <=30; p ++){
+		       moveLeft();
+			   }
+var pos = p.offset();
+        for (var p = 1; p <=10; p ++) {
+                moveUp();
+				}
+	*/		   
+	
+	 
+	 
+	 
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+		<div id="myDiv"><p>"<strong>The amazing redball experiment</strong>"</p></div>
+		<img src= "Move1.jpg"alt="redball" id="redball" height=60 width=60/>
+		
+		
+<button onclick="fadeIn()">fade in</button>
+
+<button onclick="fadeOut()">fade out</button>
+
+<button onclick="fontSize();">font size</button>
+
+<button onclick="moveX();">move x</button>
+<button onclick="moveOctagon();">move octagon</button>
+<button onclick="moveBounce();">move bounce</button>
+<button onclick="moveUp10();">Move up 10</button>
+<button onclick="movePentagon();">pentagon</button>
+<button onclick="moveTriangle();"> <img src= "center.jpg" hieght=60 width=60></button>
+<button onclick="moveRectangle();">rectangle</button>
+<table>
+       <tbody>
+	           <tr>
+					<td><button onclick="moveUpLeft()"><img src="redball1-005.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveUp()"><img src="redball1-001.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveUpRight()"><img src="redball1-006.jpg" hieght=60 width=60</button></td>
+
+				</tr>
+				<tr>
+					<td><button onclick="moveLeft()"><img src="redball1-004.jpg" hieght="60" width="60"> </button></td>
+					<td><button onclick="moveSquare()"><img src="redball1-009.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveRight()"><img src="redball1-002.jpg" hieght=60 width=60</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="moveDownLeft()"><img src="redball1-008.jpg" hieght=60 width=60</button></td>
+					<td><button onclick="moveDown()"><img src="redball1-003.jpg" hieght=60 width=60></button></td>
+					<td><button onclick="moveDownRight()"><img src="redball1-007.jpg" hieght=60 width=60</button></td>
+				</tr>
+		</tbody>
+	</table>
+</body>
+</html>
